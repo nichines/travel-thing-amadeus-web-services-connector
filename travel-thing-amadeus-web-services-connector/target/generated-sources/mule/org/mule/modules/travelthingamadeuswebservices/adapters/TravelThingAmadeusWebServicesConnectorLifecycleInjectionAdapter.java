@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
  * 
  */
 @SuppressWarnings("all")
-@Generated(value = "Mule DevKit Version 3.6.1", date = "2015-06-11T11:20:03+01:00", comments = "Build UNNAMED.2405.44720b7")
+@Generated(value = "Mule DevKit Version 3.6.1", date = "2015-06-11T11:55:03+01:00", comments = "Build UNNAMED.2405.44720b7")
 public class TravelThingAmadeusWebServicesConnectorLifecycleInjectionAdapter
     extends TravelThingAmadeusWebServicesConnectorMetadataAdapater
     implements Disposable, Initialisable, Startable, Stoppable

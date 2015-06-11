@@ -39,7 +39,7 @@ import javax.xml.bind.annotation.XmlType;
 public class ClassQueryType {
 
     @XmlElement(required = true)
-    protected List<ProductDetailsType2> productClassDetails;
+    protected List<ProductDetailsType> productClassDetails;
     protected String expandClassRequest;
 
     /**
@@ -60,13 +60,13 @@ public class ClassQueryType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ProductDetailsType2 }
+     * {@link ProductDetailsType }
      * 
      * 
      */
-    public List<ProductDetailsType2> getProductClassDetails() {
+    public List<ProductDetailsType> getProductClassDetails() {
         if (productClassDetails == null) {
-            productClassDetails = new ArrayList<ProductDetailsType2>();
+            productClassDetails = new ArrayList<ProductDetailsType>();
         }
         return this.productClassDetails;
     }
@@ -100,10 +100,10 @@ public class ClassQueryType {
      * 
      * @param productClassDetails
      *     allowed object is
-     *     {@link ProductDetailsType2 }
+     *     {@link ProductDetailsType }
      *     
      */
-    public void setProductClassDetails(List<ProductDetailsType2> productClassDetails) {
+    public void setProductClassDetails(List<ProductDetailsType> productClassDetails) {
         this.productClassDetails = productClassDetails;
     }
 

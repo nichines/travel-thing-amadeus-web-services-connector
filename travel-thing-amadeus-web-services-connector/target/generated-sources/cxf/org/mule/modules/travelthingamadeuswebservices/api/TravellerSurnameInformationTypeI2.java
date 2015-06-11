@@ -9,8 +9,6 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Identification of the surname of a traveller, the type of traveller, number of travellers per surname and the action to be taken.
- * 
  * <p>Java class for TravellerSurnameInformationTypeI complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
@@ -20,10 +18,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="surname" type="{http://xml.amadeus.com/SATRQT_07_1_1A}AlphaNumericString_Length1To70"/>
- *         &lt;element name="type" type="{http://xml.amadeus.com/SATRQT_07_1_1A}AlphaNumericString_Length1To3" minOccurs="0"/>
- *         &lt;element name="quantity" type="{http://xml.amadeus.com/SATRQT_07_1_1A}NumericInteger_Length1To15" minOccurs="0"/>
- *         &lt;element name="status" type="{http://xml.amadeus.com/SATRQT_07_1_1A}AlphaNumericString_Length1To3" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://xml.amadeus.com/SATRSP_07_1_1A}AlphaNumericString_Length1To57"/>
+ *         &lt;element name="groupIndicator" type="{http://xml.amadeus.com/SATRSP_07_1_1A}AlphaNumericString_Length1To3" minOccurs="0"/>
+ *         &lt;element name="numberOfTravellers" type="{http://xml.amadeus.com/SATRSP_07_1_1A}NumericInteger_Length1To1" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,114 +30,88 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TravellerSurnameInformationTypeI", namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", propOrder = {
-    "surname",
-    "type",
-    "quantity",
-    "status"
+@XmlType(name = "TravellerSurnameInformationTypeI", propOrder = {
+    "name",
+    "groupIndicator",
+    "numberOfTravellers"
 })
 public class TravellerSurnameInformationTypeI2 {
 
     @XmlElement(required = true)
-    protected String surname;
-    protected String type;
-    protected BigInteger quantity;
-    protected String status;
+    protected String name;
+    protected String groupIndicator;
+    protected BigInteger numberOfTravellers;
 
     /**
-     * Gets the value of the surname property.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getSurname() {
-        return surname;
+    public String getName() {
+        return name;
     }
 
     /**
-     * Sets the value of the surname property.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setSurname(String value) {
-        this.surname = value;
+    public void setName(String value) {
+        this.name = value;
     }
 
     /**
-     * Gets the value of the type property.
+     * Gets the value of the groupIndicator property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getType() {
-        return type;
+    public String getGroupIndicator() {
+        return groupIndicator;
     }
 
     /**
-     * Sets the value of the type property.
+     * Sets the value of the groupIndicator property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setType(String value) {
-        this.type = value;
+    public void setGroupIndicator(String value) {
+        this.groupIndicator = value;
     }
 
     /**
-     * Gets the value of the quantity property.
+     * Gets the value of the numberOfTravellers property.
      * 
      * @return
      *     possible object is
      *     {@link BigInteger }
      *     
      */
-    public BigInteger getQuantity() {
-        return quantity;
+    public BigInteger getNumberOfTravellers() {
+        return numberOfTravellers;
     }
 
     /**
-     * Sets the value of the quantity property.
+     * Sets the value of the numberOfTravellers property.
      * 
      * @param value
      *     allowed object is
      *     {@link BigInteger }
      *     
      */
-    public void setQuantity(BigInteger value) {
-        this.quantity = value;
-    }
-
-    /**
-     * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getStatus() {
-        return status;
-    }
-
-    /**
-     * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setStatus(String value) {
-        this.status = value;
+    public void setNumberOfTravellers(BigInteger value) {
+        this.numberOfTravellers = value;
     }
 
 }

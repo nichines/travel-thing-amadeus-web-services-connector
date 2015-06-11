@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * To specify a travellers and personal details relating to the taravellers
+ * To specify a traveler(s) and personal details relating to the traveler(s).
  * 
  * <p>Java class for TravellerInformationTypeI complex type.
  * 
@@ -21,8 +21,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="nameInformation" type="{http://xml.amadeus.com/SATRSP_07_1_1A}TravellerSurnameInformationTypeI"/>
- *         &lt;element name="otherInformation" type="{http://xml.amadeus.com/SATRSP_07_1_1A}TravellerDetailsTypeI" maxOccurs="2" minOccurs="0"/>
+ *         &lt;element name="paxDetails" type="{http://xml.amadeus.com/SATRQT_07_1_1A}TravellerSurnameInformationTypeI"/>
+ *         &lt;element name="otherPaxDetails" type="{http://xml.amadeus.com/SATRQT_07_1_1A}TravellerDetailsTypeI" maxOccurs="99" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -32,53 +32,53 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TravellerInformationTypeI", propOrder = {
-    "nameInformation",
-    "otherInformation"
+@XmlType(name = "TravellerInformationTypeI", namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", propOrder = {
+    "paxDetails",
+    "otherPaxDetails"
 })
 public class TravellerInformationTypeI {
 
     @XmlElement(required = true)
-    protected TravellerSurnameInformationTypeI nameInformation;
-    protected List<TravellerDetailsTypeI> otherInformation;
+    protected TravellerSurnameInformationTypeI paxDetails;
+    protected List<TravellerDetailsTypeI> otherPaxDetails;
 
     /**
-     * Gets the value of the nameInformation property.
+     * Gets the value of the paxDetails property.
      * 
      * @return
      *     possible object is
      *     {@link TravellerSurnameInformationTypeI }
      *     
      */
-    public TravellerSurnameInformationTypeI getNameInformation() {
-        return nameInformation;
+    public TravellerSurnameInformationTypeI getPaxDetails() {
+        return paxDetails;
     }
 
     /**
-     * Sets the value of the nameInformation property.
+     * Sets the value of the paxDetails property.
      * 
      * @param value
      *     allowed object is
      *     {@link TravellerSurnameInformationTypeI }
      *     
      */
-    public void setNameInformation(TravellerSurnameInformationTypeI value) {
-        this.nameInformation = value;
+    public void setPaxDetails(TravellerSurnameInformationTypeI value) {
+        this.paxDetails = value;
     }
 
     /**
-     * Gets the value of the otherInformation property.
+     * Gets the value of the otherPaxDetails property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the otherInformation property.
+     * This is why there is not a <CODE>set</CODE> method for the otherPaxDetails property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getOtherInformation().add(newItem);
+     *    getOtherPaxDetails().add(newItem);
      * </pre>
      * 
      * 
@@ -88,23 +88,23 @@ public class TravellerInformationTypeI {
      * 
      * 
      */
-    public List<TravellerDetailsTypeI> getOtherInformation() {
-        if (otherInformation == null) {
-            otherInformation = new ArrayList<TravellerDetailsTypeI>();
+    public List<TravellerDetailsTypeI> getOtherPaxDetails() {
+        if (otherPaxDetails == null) {
+            otherPaxDetails = new ArrayList<TravellerDetailsTypeI>();
         }
-        return this.otherInformation;
+        return this.otherPaxDetails;
     }
 
     /**
-     * Sets the value of the otherInformation property.
+     * Sets the value of the otherPaxDetails property.
      * 
-     * @param otherInformation
+     * @param otherPaxDetails
      *     allowed object is
      *     {@link TravellerDetailsTypeI }
      *     
      */
-    public void setOtherInformation(List<TravellerDetailsTypeI> otherInformation) {
-        this.otherInformation = otherInformation;
+    public void setOtherPaxDetails(List<TravellerDetailsTypeI> otherPaxDetails) {
+        this.otherPaxDetails = otherPaxDetails;
     }
 
 }

@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
+ * Reservation control information
+ * 
  * <p>Java class for ReservationControlInformationDetailsTypeI complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
@@ -17,8 +19,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="number" type="{http://xml.amadeus.com/SATRSP_07_1_1A}AlphaNumericString_Length6To6"/>
- *         &lt;element name="type" type="{http://xml.amadeus.com/SATRSP_07_1_1A}AlphaString_Length1To1"/>
+ *         &lt;element name="number" type="{http://xml.amadeus.com/SATRQT_07_1_1A}AlphaNumericString_Length6To6"/>
+ *         &lt;element name="type" type="{http://xml.amadeus.com/SATRQT_07_1_1A}AlphaString_Length1To1"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -28,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ReservationControlInformationDetailsTypeI", propOrder = {
+@XmlType(name = "ReservationControlInformationDetailsTypeI", namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", propOrder = {
     "number",
     "type"
 })

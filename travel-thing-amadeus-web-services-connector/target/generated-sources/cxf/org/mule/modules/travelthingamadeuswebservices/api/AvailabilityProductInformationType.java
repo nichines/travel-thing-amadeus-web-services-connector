@@ -60,7 +60,7 @@ import javax.xml.bind.annotation.XmlType;
 public class AvailabilityProductInformationType {
 
     @XmlElement(required = true)
-    protected ProductDateTimeType flightDetails;
+    protected ProductDateTimeType2 flightDetails;
     @XmlElement(required = true)
     protected LocationType departureLocation;
     protected List<AssociatedPreferenceType> departurePreference;
@@ -70,8 +70,8 @@ public class AvailabilityProductInformationType {
     protected List<AssociatedPreferenceType5091C> markCompanyPreferences;
     protected CompanyIdentificationType operatingCompany;
     protected List<AssociatedPreferenceType5091C> operCompanyPreference;
-    protected ProductIdentificationDetailsType flightIdentification;
-    protected ProductTypeDetailsType productTypeDetail;
+    protected ProductIdentificationDetailsType2 flightIdentification;
+    protected ProductTypeDetailsType2 productTypeDetail;
     protected BigInteger lineItemNumber;
 
     /**
@@ -79,10 +79,10 @@ public class AvailabilityProductInformationType {
      * 
      * @return
      *     possible object is
-     *     {@link ProductDateTimeType }
+     *     {@link ProductDateTimeType2 }
      *     
      */
-    public ProductDateTimeType getFlightDetails() {
+    public ProductDateTimeType2 getFlightDetails() {
         return flightDetails;
     }
 
@@ -91,10 +91,10 @@ public class AvailabilityProductInformationType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ProductDateTimeType }
+     *     {@link ProductDateTimeType2 }
      *     
      */
-    public void setFlightDetails(ProductDateTimeType value) {
+    public void setFlightDetails(ProductDateTimeType2 value) {
         this.flightDetails = value;
     }
 
@@ -315,10 +315,10 @@ public class AvailabilityProductInformationType {
      * 
      * @return
      *     possible object is
-     *     {@link ProductIdentificationDetailsType }
+     *     {@link ProductIdentificationDetailsType2 }
      *     
      */
-    public ProductIdentificationDetailsType getFlightIdentification() {
+    public ProductIdentificationDetailsType2 getFlightIdentification() {
         return flightIdentification;
     }
 
@@ -327,10 +327,10 @@ public class AvailabilityProductInformationType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ProductIdentificationDetailsType }
+     *     {@link ProductIdentificationDetailsType2 }
      *     
      */
-    public void setFlightIdentification(ProductIdentificationDetailsType value) {
+    public void setFlightIdentification(ProductIdentificationDetailsType2 value) {
         this.flightIdentification = value;
     }
 
@@ -339,10 +339,10 @@ public class AvailabilityProductInformationType {
      * 
      * @return
      *     possible object is
-     *     {@link ProductTypeDetailsType }
+     *     {@link ProductTypeDetailsType2 }
      *     
      */
-    public ProductTypeDetailsType getProductTypeDetail() {
+    public ProductTypeDetailsType2 getProductTypeDetail() {
         return productTypeDetail;
     }
 
@@ -351,10 +351,10 @@ public class AvailabilityProductInformationType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ProductTypeDetailsType }
+     *     {@link ProductTypeDetailsType2 }
      *     
      */
-    public void setProductTypeDetail(ProductTypeDetailsType value) {
+    public void setProductTypeDetail(ProductTypeDetailsType2 value) {
         this.productTypeDetail = value;
     }
 

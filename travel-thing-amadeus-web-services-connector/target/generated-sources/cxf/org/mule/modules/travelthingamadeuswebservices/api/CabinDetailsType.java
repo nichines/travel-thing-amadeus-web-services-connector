@@ -35,17 +35,17 @@ import javax.xml.bind.annotation.XmlType;
 public class CabinDetailsType {
 
     @XmlElement(required = true)
-    protected CabinClassDesignationType cabinDesignation;
+    protected CabinClassDesignationType2 cabinDesignation;
 
     /**
      * Gets the value of the cabinDesignation property.
      * 
      * @return
      *     possible object is
-     *     {@link CabinClassDesignationType }
+     *     {@link CabinClassDesignationType2 }
      *     
      */
-    public CabinClassDesignationType getCabinDesignation() {
+    public CabinClassDesignationType2 getCabinDesignation() {
         return cabinDesignation;
     }
 
@@ -54,10 +54,10 @@ public class CabinDetailsType {
      * 
      * @param value
      *     allowed object is
-     *     {@link CabinClassDesignationType }
+     *     {@link CabinClassDesignationType2 }
      *     
      */
-    public void setCabinDesignation(CabinClassDesignationType value) {
+    public void setCabinDesignation(CabinClassDesignationType2 value) {
         this.cabinDesignation = value;
     }
 

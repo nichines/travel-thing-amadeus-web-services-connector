@@ -1,8 +1,6 @@
 
 package org.mule.modules.travelthingamadeuswebservices.api;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -10,7 +8,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Product type details
+ * Specification of the availability type
  * 
  * <p>Java class for ProductTypeDetailsType complex type.
  * 
@@ -21,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="productIndicators" type="{http://xml.amadeus.com/SATRSP_07_1_1A}AlphaNumericString_Length1To3" maxOccurs="9"/>
+ *         &lt;element name="typeOfRequest" type="{http://xml.amadeus.com/SATRQT_07_1_1A}AlphaNumericString_Length2To2"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,53 +29,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ProductTypeDetailsType", propOrder = {
-    "productIndicators"
+@XmlType(name = "ProductTypeDetailsType", namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", propOrder = {
+    "typeOfRequest"
 })
 public class ProductTypeDetailsType {
 
     @XmlElement(required = true)
-    protected List<String> productIndicators;
+    protected String typeOfRequest;
 
     /**
-     * Gets the value of the productIndicators property.
+     * Gets the value of the typeOfRequest property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the productIndicators property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getProductIndicators().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public List<String> getProductIndicators() {
-        if (productIndicators == null) {
-            productIndicators = new ArrayList<String>();
-        }
-        return this.productIndicators;
+    public String getTypeOfRequest() {
+        return typeOfRequest;
     }
 
     /**
-     * Sets the value of the productIndicators property.
+     * Sets the value of the typeOfRequest property.
      * 
-     * @param productIndicators
+     * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setProductIndicators(List<String> productIndicators) {
-        this.productIndicators = productIndicators;
+    public void setTypeOfRequest(String value) {
+        this.typeOfRequest = value;
     }
 
 }

@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
 public class AvailabilityProductionInfoType {
 
     @XmlElement(required = true)
-    protected List<ProductDateTimeType2> availabilityDetails;
+    protected List<ProductDateTimeType> availabilityDetails;
     protected LocationDetailsType departureLocationInfo;
     protected LocationDetailsType arrivalLocationInfo;
 
@@ -63,13 +63,13 @@ public class AvailabilityProductionInfoType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ProductDateTimeType2 }
+     * {@link ProductDateTimeType }
      * 
      * 
      */
-    public List<ProductDateTimeType2> getAvailabilityDetails() {
+    public List<ProductDateTimeType> getAvailabilityDetails() {
         if (availabilityDetails == null) {
-            availabilityDetails = new ArrayList<ProductDateTimeType2>();
+            availabilityDetails = new ArrayList<ProductDateTimeType>();
         }
         return this.availabilityDetails;
     }
@@ -127,10 +127,10 @@ public class AvailabilityProductionInfoType {
      * 
      * @param availabilityDetails
      *     allowed object is
-     *     {@link ProductDateTimeType2 }
+     *     {@link ProductDateTimeType }
      *     
      */
-    public void setAvailabilityDetails(List<ProductDateTimeType2> availabilityDetails) {
+    public void setAvailabilityDetails(List<ProductDateTimeType> availabilityDetails) {
         this.availabilityDetails = availabilityDetails;
     }
 

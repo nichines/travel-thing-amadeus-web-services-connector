@@ -43,9 +43,9 @@ import javax.xml.bind.annotation.XmlType;
 public class AvailabilityOptionsType {
 
     @XmlElement(required = true)
-    protected ProductTypeDetailsType2 productTypeDetails;
+    protected ProductTypeDetailsType productTypeDetails;
     protected List<SelectionDetailsInformationType> optionInfo;
-    protected List<ProductIdentificationDetailsType2> productAvailability;
+    protected List<ProductIdentificationDetailsType> productAvailability;
     protected String typeOfAircraft;
 
     /**
@@ -53,10 +53,10 @@ public class AvailabilityOptionsType {
      * 
      * @return
      *     possible object is
-     *     {@link ProductTypeDetailsType2 }
+     *     {@link ProductTypeDetailsType }
      *     
      */
-    public ProductTypeDetailsType2 getProductTypeDetails() {
+    public ProductTypeDetailsType getProductTypeDetails() {
         return productTypeDetails;
     }
 
@@ -65,10 +65,10 @@ public class AvailabilityOptionsType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ProductTypeDetailsType2 }
+     *     {@link ProductTypeDetailsType }
      *     
      */
-    public void setProductTypeDetails(ProductTypeDetailsType2 value) {
+    public void setProductTypeDetails(ProductTypeDetailsType value) {
         this.productTypeDetails = value;
     }
 
@@ -119,13 +119,13 @@ public class AvailabilityOptionsType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ProductIdentificationDetailsType2 }
+     * {@link ProductIdentificationDetailsType }
      * 
      * 
      */
-    public List<ProductIdentificationDetailsType2> getProductAvailability() {
+    public List<ProductIdentificationDetailsType> getProductAvailability() {
         if (productAvailability == null) {
-            productAvailability = new ArrayList<ProductIdentificationDetailsType2>();
+            productAvailability = new ArrayList<ProductIdentificationDetailsType>();
         }
         return this.productAvailability;
     }
@@ -171,10 +171,10 @@ public class AvailabilityOptionsType {
      * 
      * @param productAvailability
      *     allowed object is
-     *     {@link ProductIdentificationDetailsType2 }
+     *     {@link ProductIdentificationDetailsType }
      *     
      */
-    public void setProductAvailability(List<ProductIdentificationDetailsType2> productAvailability) {
+    public void setProductAvailability(List<ProductIdentificationDetailsType> productAvailability) {
         this.productAvailability = productAvailability;
     }
 

@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: TravelThingAmadeusWebServices
 Bundle-SymbolicName: org.mule.tooling.ui.contribution.travel-thing-amadeus-web-services.3.5.0;singleton:=true
-Bundle-Version: 1.0.0.201506112320
+Bundle-Version: 1.0.0.201506112355
 Bundle-Activator: org.mule.tooling.ui.contribution.TravelThingAmadeusWebServicesActivator
 Bundle-Vendor: MuleSoft, Inc.
 Require-Bundle: org.eclipse.ui,

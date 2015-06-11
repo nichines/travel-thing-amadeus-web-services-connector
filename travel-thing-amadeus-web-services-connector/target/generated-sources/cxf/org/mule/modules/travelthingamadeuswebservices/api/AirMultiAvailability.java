@@ -218,7 +218,7 @@ public class AirMultiAvailability {
     public static class FrequentTraveller {
 
         @XmlElement(namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", required = true)
-        protected TravellerInformationTypeI2 travellerDetails;
+        protected TravellerInformationTypeI travellerDetails;
         @XmlElement(namespace = "http://xml.amadeus.com/SATRQT_07_1_1A")
         protected FrequentTravellerInformationTypeI travelleridentification;
 
@@ -227,10 +227,10 @@ public class AirMultiAvailability {
          * 
          * @return
          *     possible object is
-         *     {@link TravellerInformationTypeI2 }
+         *     {@link TravellerInformationTypeI }
          *     
          */
-        public TravellerInformationTypeI2 getTravellerDetails() {
+        public TravellerInformationTypeI getTravellerDetails() {
             return travellerDetails;
         }
 
@@ -239,10 +239,10 @@ public class AirMultiAvailability {
          * 
          * @param value
          *     allowed object is
-         *     {@link TravellerInformationTypeI2 }
+         *     {@link TravellerInformationTypeI }
          *     
          */
-        public void setTravellerDetails(TravellerInformationTypeI2 value) {
+        public void setTravellerDetails(TravellerInformationTypeI value) {
             this.travellerDetails = value;
         }
 
@@ -357,7 +357,7 @@ public class AirMultiAvailability {
         @XmlElement(namespace = "http://xml.amadeus.com/SATRQT_07_1_1A")
         protected CabinDescriptionType cabinOption;
         @XmlElement(namespace = "http://xml.amadeus.com/SATRQT_07_1_1A")
-        protected NegociatedSpaceType2 negoSpaceDetails;
+        protected NegociatedSpaceType negoSpaceDetails;
         @XmlElement(namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", required = true)
         protected AvailabilityOptionsType availabilityOptions;
         @XmlElement(namespace = "http://xml.amadeus.com/SATRQT_07_1_1A")
@@ -575,10 +575,10 @@ public class AirMultiAvailability {
          * 
          * @return
          *     possible object is
-         *     {@link NegociatedSpaceType2 }
+         *     {@link NegociatedSpaceType }
          *     
          */
-        public NegociatedSpaceType2 getNegoSpaceDetails() {
+        public NegociatedSpaceType getNegoSpaceDetails() {
             return negoSpaceDetails;
         }
 
@@ -587,10 +587,10 @@ public class AirMultiAvailability {
          * 
          * @param value
          *     allowed object is
-         *     {@link NegociatedSpaceType2 }
+         *     {@link NegociatedSpaceType }
          *     
          */
-        public void setNegoSpaceDetails(NegociatedSpaceType2 value) {
+        public void setNegoSpaceDetails(NegociatedSpaceType value) {
             this.negoSpaceDetails = value;
         }
 
@@ -792,7 +792,7 @@ public class AirMultiAvailability {
             @XmlElement(namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", required = true)
             protected SelectionDetailsTypeI travelChoiceDetails;
             @XmlElement(namespace = "http://xml.amadeus.com/SATRQT_07_1_1A")
-            protected ReservationControlInformationTypeI2 profileInformation;
+            protected ReservationControlInformationTypeI profileInformation;
 
             /**
              * Gets the value of the travelChoiceDetails property.
@@ -823,10 +823,10 @@ public class AirMultiAvailability {
              * 
              * @return
              *     possible object is
-             *     {@link ReservationControlInformationTypeI2 }
+             *     {@link ReservationControlInformationTypeI }
              *     
              */
-            public ReservationControlInformationTypeI2 getProfileInformation() {
+            public ReservationControlInformationTypeI getProfileInformation() {
                 return profileInformation;
             }
 
@@ -835,10 +835,10 @@ public class AirMultiAvailability {
              * 
              * @param value
              *     allowed object is
-             *     {@link ReservationControlInformationTypeI2 }
+             *     {@link ReservationControlInformationTypeI }
              *     
              */
-            public void setProfileInformation(ReservationControlInformationTypeI2 value) {
+            public void setProfileInformation(ReservationControlInformationTypeI value) {
                 this.profileInformation = value;
             }
 

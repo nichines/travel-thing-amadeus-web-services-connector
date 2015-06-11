@@ -3,12 +3,11 @@ package org.mule.modules.travelthingamadeuswebservices.api;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * To specify a reference to a reservation
+ * Specification of the travel choice profile used in the request
  * 
  * <p>Java class for ReservationControlInformationTypeI complex type.
  * 
@@ -19,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="profileRecordLocator" type="{http://xml.amadeus.com/SATRSP_07_1_1A}ReservationControlInformationDetailsTypeI"/>
+ *         &lt;element name="profileRecordLocator" type="{http://xml.amadeus.com/SATRQT_07_1_1A}ReservationControlInformationDetailsTypeI" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,12 +28,11 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ReservationControlInformationTypeI", propOrder = {
+@XmlType(name = "ReservationControlInformationTypeI", namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", propOrder = {
     "profileRecordLocator"
 })
 public class ReservationControlInformationTypeI {
 
-    @XmlElement(required = true)
     protected ReservationControlInformationDetailsTypeI profileRecordLocator;
 
     /**

@@ -39,7 +39,7 @@ import javax.xml.bind.annotation.XmlType;
 public class ClassInformationType {
 
     @XmlElement(required = true)
-    protected ProductDetailsType productClassDetail;
+    protected ProductDetailsType2 productClassDetail;
     protected List<AssociatedPreferenceType> preferenceForTheClass;
 
     /**
@@ -47,10 +47,10 @@ public class ClassInformationType {
      * 
      * @return
      *     possible object is
-     *     {@link ProductDetailsType }
+     *     {@link ProductDetailsType2 }
      *     
      */
-    public ProductDetailsType getProductClassDetail() {
+    public ProductDetailsType2 getProductClassDetail() {
         return productClassDetail;
     }
 
@@ -59,10 +59,10 @@ public class ClassInformationType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ProductDetailsType }
+     *     {@link ProductDetailsType2 }
      *     
      */
-    public void setProductClassDetail(ProductDetailsType value) {
+    public void setProductClassDetail(ProductDetailsType2 value) {
         this.productClassDetail = value;
     }
 

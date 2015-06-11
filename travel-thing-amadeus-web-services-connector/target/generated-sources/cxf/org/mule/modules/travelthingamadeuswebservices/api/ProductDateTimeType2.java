@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Defines date and time of an availability request
+ * Product date or time
  * 
  * <p>Java class for ProductDateTimeType complex type.
  * 
@@ -18,10 +18,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="departureDate" type="{http://xml.amadeus.com/SATRQT_07_1_1A}Date_DDMMYY" minOccurs="0"/>
- *         &lt;element name="departureTime" type="{http://xml.amadeus.com/SATRQT_07_1_1A}Time24_HHMM" minOccurs="0"/>
- *         &lt;element name="arrivalDate" type="{http://xml.amadeus.com/SATRQT_07_1_1A}Date_DDMMYY" minOccurs="0"/>
- *         &lt;element name="arrivalTime" type="{http://xml.amadeus.com/SATRQT_07_1_1A}Time24_HHMM" minOccurs="0"/>
+ *         &lt;element name="departureDate" type="{http://xml.amadeus.com/SATRSP_07_1_1A}Date_DDMMYY" minOccurs="0"/>
+ *         &lt;element name="departureTime" type="{http://xml.amadeus.com/SATRSP_07_1_1A}Time24_HHMM" minOccurs="0"/>
+ *         &lt;element name="arrivalDate" type="{http://xml.amadeus.com/SATRSP_07_1_1A}Date_DDMMYY" minOccurs="0"/>
+ *         &lt;element name="arrivalTime" type="{http://xml.amadeus.com/SATRSP_07_1_1A}Time24_HHMM" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ProductDateTimeType", namespace = "http://xml.amadeus.com/SATRQT_07_1_1A", propOrder = {
+@XmlType(name = "ProductDateTimeType", propOrder = {
     "departureDate",
     "departureTime",
     "arrivalDate",

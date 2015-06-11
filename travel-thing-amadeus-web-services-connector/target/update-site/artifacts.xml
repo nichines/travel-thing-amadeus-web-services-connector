@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
-<repository name='file:/C:/Users/Nic/AnypointStudio/workspace/travel-thing-amadeus-web-services-connector/target/update-site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+<repository name='file:/C:/Users/Nic/git/travel-thing-amadeus-web-services-connector/travel-thing-amadeus-web-services-connector/target/update-site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1434061223362'/>
+    <property name='p2.timestamp' value='1434063321833'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -11,19 +11,19 @@
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
   <artifacts size='2'>
-    <artifact classifier='osgi.bundle' id='org.mule.tooling.ui.contribution.travel-thing-amadeus-web-services.3.5.0' version='1.0.0.201506112320'>
-      <properties size='3'>
-        <property name='artifact.size' value='5406772'/>
-        <property name='download.size' value='5406772'/>
-        <property name='download.md5' value='5946eb1c6f04bfc3e209d76b230619b9'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='org.mule.tooling.ui.extension.travel-thing-amadeus-web-services-connector.3.5.0' version='1.0.0.201506112320'>
+    <artifact classifier='org.eclipse.update.feature' id='org.mule.tooling.ui.extension.travel-thing-amadeus-web-services-connector.3.5.0' version='1.0.0.201506112355'>
       <properties size='4'>
         <property name='artifact.size' value='10083'/>
         <property name='download.size' value='10083'/>
-        <property name='download.md5' value='036cf757670365aca11011f897f395a2'/>
+        <property name='download.md5' value='3d3dc94c3c853caa505cb8dc7bb78d2c'/>
         <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.mule.tooling.ui.contribution.travel-thing-amadeus-web-services.3.5.0' version='1.0.0.201506112355'>
+      <properties size='3'>
+        <property name='artifact.size' value='5408036'/>
+        <property name='download.size' value='5408036'/>
+        <property name='download.md5' value='c82e29a00892b03763a8d4175d80e83c'/>
       </properties>
     </artifact>
   </artifacts>

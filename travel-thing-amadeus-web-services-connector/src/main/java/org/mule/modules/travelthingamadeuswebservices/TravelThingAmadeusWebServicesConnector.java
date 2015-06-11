@@ -22,8 +22,8 @@ import org.mule.modules.travelthingamadeuswebservices.api.AvailabilityProduction
 import org.mule.modules.travelthingamadeuswebservices.api.LocationDetailsType;
 import org.mule.modules.travelthingamadeuswebservices.api.MessageActionDetailsType;
 import org.mule.modules.travelthingamadeuswebservices.api.MessageFunctionBusinessDetailsType;
-import org.mule.modules.travelthingamadeuswebservices.api.ProductDateTimeType2;
-import org.mule.modules.travelthingamadeuswebservices.api.ProductTypeDetailsType2;
+import org.mule.modules.travelthingamadeuswebservices.api.ProductDateTimeType;
+import org.mule.modules.travelthingamadeuswebservices.api.ProductTypeDetailsType;
 import org.mule.modules.travelthingamadeuswebservices.api.SecurityAuthenticateReply;
 import org.mule.modules.travelthingamadeuswebservices.strategy.TravelThingAmadeusWebServicesConnectorConnectionStrategy;
 import org.slf4j.Logger;
@@ -102,7 +102,7 @@ public class TravelThingAmadeusWebServicesConnector {
 				
 				RequestSection requestSection = new RequestSection();
 				AvailabilityProductionInfoType availabilityProductionInfoType = new AvailabilityProductionInfoType();
-				ProductDateTimeType2 productDateTimeType = new ProductDateTimeType2();
+				ProductDateTimeType productDateTimeType = new ProductDateTimeType();
 				LocationDetailsType boardPoint = new LocationDetailsType();
 				LocationDetailsType offPoint = new LocationDetailsType();
 	
@@ -119,7 +119,7 @@ public class TravelThingAmadeusWebServicesConnector {
 				requestSection.setAvailabilityProductInfo(availabilityProductionInfoType);
 				
 				requestSection.setAvailabilityOptions(new AvailabilityOptionsType());
-				requestSection.getAvailabilityOptions().setProductTypeDetails(new ProductTypeDetailsType2());
+				requestSection.getAvailabilityOptions().setProductTypeDetails(new ProductTypeDetailsType());
 				requestSection.getAvailabilityOptions().getProductTypeDetails().setTypeOfRequest("TN");
 				
 				airMultiAvailability.getRequestSection().add(requestSection);	

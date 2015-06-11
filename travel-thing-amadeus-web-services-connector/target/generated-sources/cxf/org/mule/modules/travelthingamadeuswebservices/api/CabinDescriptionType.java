@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class CabinDescriptionType {
 
-    protected CabinClassDesignationType2 cabinDesignation;
+    protected CabinClassDesignationType cabinDesignation;
     protected String orderClassesByCabin;
 
     /**
@@ -43,10 +43,10 @@ public class CabinDescriptionType {
      * 
      * @return
      *     possible object is
-     *     {@link CabinClassDesignationType2 }
+     *     {@link CabinClassDesignationType }
      *     
      */
-    public CabinClassDesignationType2 getCabinDesignation() {
+    public CabinClassDesignationType getCabinDesignation() {
         return cabinDesignation;
     }
 
@@ -55,10 +55,10 @@ public class CabinDescriptionType {
      * 
      * @param value
      *     allowed object is
-     *     {@link CabinClassDesignationType2 }
+     *     {@link CabinClassDesignationType }
      *     
      */
-    public void setCabinDesignation(CabinClassDesignationType2 value) {
+    public void setCabinDesignation(CabinClassDesignationType value) {
         this.cabinDesignation = value;
     }
 

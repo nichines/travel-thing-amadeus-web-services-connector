@@ -742,7 +742,7 @@ public class AirMultiAvailabilityReply {
             protected AdditionalProductDetailsTypeI additionalFlightInfo;
             protected TrafficRestrictionTypeI trafficRestrictionList;
             protected List<AirMultiAvailabilityReply.SingleCityPairInfo.FlightInfo.FlightErrorWarningSection> flightErrorWarningSection;
-            protected NegociatedSpaceType negoSpaceDetails;
+            protected NegociatedSpaceType2 negoSpaceDetails;
 
             /**
              * Gets the value of the basicFlightInfo property.
@@ -908,10 +908,10 @@ public class AirMultiAvailabilityReply {
              * 
              * @return
              *     possible object is
-             *     {@link NegociatedSpaceType }
+             *     {@link NegociatedSpaceType2 }
              *     
              */
-            public NegociatedSpaceType getNegoSpaceDetails() {
+            public NegociatedSpaceType2 getNegoSpaceDetails() {
                 return negoSpaceDetails;
             }
 
@@ -920,10 +920,10 @@ public class AirMultiAvailabilityReply {
              * 
              * @param value
              *     allowed object is
-             *     {@link NegociatedSpaceType }
+             *     {@link NegociatedSpaceType2 }
              *     
              */
-            public void setNegoSpaceDetails(NegociatedSpaceType value) {
+            public void setNegoSpaceDetails(NegociatedSpaceType2 value) {
                 this.negoSpaceDetails = value;
             }
 
@@ -1301,8 +1301,8 @@ public class AirMultiAvailabilityReply {
         public static class PreferencesSection {
 
             @XmlElement(required = true)
-            protected ReservationControlInformationTypeI profileIdentificationSection;
-            protected TravellerInformationTypeI travellerInformation;
+            protected ReservationControlInformationTypeI2 profileIdentificationSection;
+            protected TravellerInformationTypeI2 travellerInformation;
             protected ProfileNameType associationName;
             protected OriginAndDestinationRequestType originAndDestinationRules;
             protected CabinEligibilityRulesType cabinRules;
@@ -1314,10 +1314,10 @@ public class AirMultiAvailabilityReply {
              * 
              * @return
              *     possible object is
-             *     {@link ReservationControlInformationTypeI }
+             *     {@link ReservationControlInformationTypeI2 }
              *     
              */
-            public ReservationControlInformationTypeI getProfileIdentificationSection() {
+            public ReservationControlInformationTypeI2 getProfileIdentificationSection() {
                 return profileIdentificationSection;
             }
 
@@ -1326,10 +1326,10 @@ public class AirMultiAvailabilityReply {
              * 
              * @param value
              *     allowed object is
-             *     {@link ReservationControlInformationTypeI }
+             *     {@link ReservationControlInformationTypeI2 }
              *     
              */
-            public void setProfileIdentificationSection(ReservationControlInformationTypeI value) {
+            public void setProfileIdentificationSection(ReservationControlInformationTypeI2 value) {
                 this.profileIdentificationSection = value;
             }
 
@@ -1338,10 +1338,10 @@ public class AirMultiAvailabilityReply {
              * 
              * @return
              *     possible object is
-             *     {@link TravellerInformationTypeI }
+             *     {@link TravellerInformationTypeI2 }
              *     
              */
-            public TravellerInformationTypeI getTravellerInformation() {
+            public TravellerInformationTypeI2 getTravellerInformation() {
                 return travellerInformation;
             }
 
@@ -1350,10 +1350,10 @@ public class AirMultiAvailabilityReply {
              * 
              * @param value
              *     allowed object is
-             *     {@link TravellerInformationTypeI }
+             *     {@link TravellerInformationTypeI2 }
              *     
              */
-            public void setTravellerInformation(TravellerInformationTypeI value) {
+            public void setTravellerInformation(TravellerInformationTypeI2 value) {
                 this.travellerInformation = value;
             }
 
