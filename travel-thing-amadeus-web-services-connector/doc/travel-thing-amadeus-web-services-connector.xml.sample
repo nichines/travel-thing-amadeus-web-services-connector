@@ -1,0 +1,60 @@
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:air-multi-availability) -->
+	<travel-thing-amadeus-web-services:air-multi-availability config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:air-multi-availability ref="#[flowVars.AirMultiAvailabilityRef]"/>
+	</travel-thing-amadeus-web-services:air-multi-availability>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:air-multi-availability) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:pnr-add-multi-elements) -->
+	<travel-thing-amadeus-web-services:pnr-add-multi-elements config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:p-n-r-add-multi-elements ref="#[flowVars.PNRAddMultiElementsRef]"/>
+	</travel-thing-amadeus-web-services:pnr-add-multi-elements>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:pnr-add-multi-elements) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:queue-place-p-n-r) -->
+	<travel-thing-amadeus-web-services:queue-place-p-n-r config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:queue-place-p-n-r ref="#[flowVars.QueuePlacePNRRef]"/>
+	</travel-thing-amadeus-web-services:queue-place-p-n-r>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:queue-place-p-n-r) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:ticket-display-t-s-t) -->
+	<travel-thing-amadeus-web-services:ticket-display-t-s-t config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:ticket-display-t-s-t ref="#[flowVars.TicketDisplayTSTRef]"/>
+	</travel-thing-amadeus-web-services:ticket-display-t-s-t>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:ticket-display-t-s-t) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:security-sign-out) -->
+	<travel-thing-amadeus-web-services:security-sign-out config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:security-sign-out ref="#[flowVars.SecuritySignOutRef]"/>
+	</travel-thing-amadeus-web-services:security-sign-out>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:security-sign-out) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:security-authenticate) -->
+	<travel-thing-amadeus-web-services:security-authenticate config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:security-authenticate ref="#[flowVars.SecurityAuthenticateRef]"/>
+	</travel-thing-amadeus-web-services:security-authenticate>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:security-authenticate) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:command-cryptic) -->
+	<travel-thing-amadeus-web-services:command-cryptic config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:command-cryptic ref="#[flowVars.CommandCrypticRef]"/>
+	</travel-thing-amadeus-web-services:command-cryptic>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:command-cryptic) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:pnr-retrieve) -->
+	<travel-thing-amadeus-web-services:pnr-retrieve config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:p-n-r-retrieve ref="#[flowVars.PNRRetrieveRef]"/>
+	</travel-thing-amadeus-web-services:pnr-retrieve>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:pnr-retrieve) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:pnr-retrieve2) -->
+	<travel-thing-amadeus-web-services:pnr-retrieve2 config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:p-n-r-retrieve ref="#[flowVars.PNRRetrieveRef]"/>
+	</travel-thing-amadeus-web-services:pnr-retrieve2>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:pnr-retrieve2) -->
+
+<!-- BEGIN_INCLUDE(travel-thing-amadeus-web-services:pnr-cancel) -->
+	<travel-thing-amadeus-web-services:pnr-cancel config-ref="Travel-thing-amadeus-web-services">
+		<travel-thing-amadeus-web-services:p-n-r-cancel ref="#[flowVars.PNRCancelRef]"/>
+	</travel-thing-amadeus-web-services:pnr-cancel>
+<!-- END_INCLUDE(travel-thing-amadeus-web-services:pnr-cancel) -->
+

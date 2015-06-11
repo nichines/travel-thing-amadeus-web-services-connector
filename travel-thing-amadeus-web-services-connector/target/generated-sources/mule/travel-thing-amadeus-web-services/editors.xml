@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<namespace xmlns="http://www.mulesoft.org/schema/mule/tooling.attributes" xmlns:mule="http://www.mulesoft.org/schema/mule/core" url="http://www.mulesoft.org/schema/mule/travel-thing-amadeus-web-services" prefix="travel-thing-amadeus-web-services">
+  <global-cloud-connector versions="[3.5.0,8.0.0]" caption="TravelThingAmadeusWebServices" description="" icon="" localId="parentConfig" image="" abstract="true" extends="http://www.mulesoft.org/schema/mule/travel-thing-amadeus-web-services/abstractTravel-thing-amadeus-web-servicesConnectorGeneric"></global-cloud-connector>
+  <global-cloud-connector versions="[3.5.0,8.0.0]" caption="TravelThingAmadeusWebServices: Configuration type strategy" description="Global Configuration type strategy configuration information. Configuration type Strategy." icon="icons/small/travel-thing-amadeus-web-services-connector-24x16.png" localId="config-type" image="icons/large/travel-thing-amadeus-web-services-connector-48x32.png" abstract="false" extends="http://www.mulesoft.org/schema/mule/travel-thing-amadeus-web-services/parentConfig" connectivityTesting="off" metaData="static" metaDataKeyDisplay="DISPLAY_NAME">
+    <attribute-category caption="General" description="Travel-thing-amadeus-web-services configuration properties.">
+      <group id="travel-thing-amadeus-web-servicesGenericProperties" caption="Basic Settings">
+        <name name="name" caption="Name" description="Give a name to this configuration so it can be later referenced by config-ref." required="true"></name>
+      </group>
+      <group id="general" caption="General">
+        <string defaultValue="How are you?" name="reply" caption="Reply" description="Configurable." required="false" javaType="java.lang.String"></string>
+      </group>
+    </attribute-category>
+  </global-cloud-connector>
+  <cloud-connector caption="Abstracttravel-thing-amadeus-web-servicesconnectorgeneric" description="Interact with Travel-thing-amadeus-web-services." icon="icons/small/travel-thing-amadeus-web-services-connector-24x16.png" localId="abstractTravel-thing-amadeus-web-servicesConnectorGeneric" image="icons/large/travel-thing-amadeus-web-services-connector-48x32.png" abstract="true">
+    <attribute-category caption="General" description="General.">
+      <group id="abstractTravel-thing-amadeus-web-servicesConnectorGeneric" caption="Basic Settings">
+        <globalRef requiredType="http://www.mulesoft.org/schema/mule/travel-thing-amadeus-web-services/config-type" name="config-ref" caption="Connector Configuration" description="Specify which configuration to use for this invocation." required="true"></globalRef>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector versions="[3.5.0,8.0.0]" aliasId="org.mule.tooling.ui.modules.core.pattern.travel-thing-amadeus-web-services" caption="TravelThingAmadeusWebServices" description="Anypoint Connector.
+
+No description available." icon="icons/small/travel-thing-amadeus-web-services-connector-24x16.png" localId="travel-thing-amadeus-web-services-connector" image="icons/large/travel-thing-amadeus-web-services-connector-48x32.png" extends="http://www.mulesoft.org/schema/mule/travel-thing-amadeus-web-services/abstractTravel-thing-amadeus-web-servicesConnectorGeneric">
+    <attribute-category caption="General" description="General.">
+      <group id="travel-thing-amadeus-web-servicesConnectorGeneric" caption="Basic Settings">
+        <modeSwitch alwaysCombo="true" name="Travel-thing-amadeus-web-services operations to execute" caption="Operation" description="Operation.">
+          <no-operation abstractElement="http://www.mulesoft.org/schema/mule/travel-thing-amadeus-web-services/abstractTravel-thing-amadeus-web-servicesConnectorGeneric" versions="[3.5.0,8.0.0]" connector-name="processor"></no-operation>
+          <mode modeId="http://www.mulesoft.org/schema/mule/travel-thing-amadeus-web-services/air-multi-availability" modeLabel="Air multi availability"></mode>
+        </modeSwitch>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="org.mule.modules.travelthingamadeuswebservices.api.AirMultiAvailabilityReply" caption="Air Multi Availability" icon="icons/small/travel-thing-amadeus-web-services-connector-24x16.png" localId="air-multi-availability" image="icons/large/travel-thing-amadeus-web-services-connector-48x32.png" abstract="true" extends="http://www.mulesoft.org/schema/mule/travel-thing-amadeus-web-services/abstractTravel-thing-amadeus-web-servicesConnectorGeneric" metaData="static">
+    <attribute-category caption="General" description="General.">
+      <group id="general" caption="General">
+        <string defaultValue="#[payload]" name="payload-ref" caption="Payload Reference" description="" required="false" javaType="org.mule.module.json.JsonData"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+</namespace>

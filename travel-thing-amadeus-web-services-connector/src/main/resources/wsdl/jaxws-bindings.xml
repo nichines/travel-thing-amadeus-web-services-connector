@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE bindings [
+	<!ELEMENT enableWrapperStyle (#PCDATA)>
+]>
+<bindings wsdlLocation="1ASIWOSITRM_PRD_20130328_152327.wsdl" xmlns="http://java.sun.com/xml/ns/jaxws" >
+	<!-- disable wrapper style generation -->
+	<enableWrapperStyle>false</enableWrapperStyle>
+</bindings>
